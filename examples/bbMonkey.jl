@@ -13,7 +13,6 @@ Pkg.add([
 	"Rotations", 
 	"StaticArrays", 
 	"WGPUNative", 
-	"Images"
 ])
 
 using WGPUgfx
