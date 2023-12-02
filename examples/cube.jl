@@ -2,7 +2,18 @@
 # TODO show two different ways to render them. 
 # One version grouped together version with axis, bbox
 
-using Debugger
+import Pkg
+Pkg.add([
+	"WGPUgfx", 
+	"WGPUCore", 
+	"WGPUCanvas", 
+	"GLFW", 
+	"Rotations", 
+	"StaticArrays", 
+	"WGPUNative", 
+	"Images"
+])
+
 using WGPUgfx
 using WGPUCore
 using WGPUNative
