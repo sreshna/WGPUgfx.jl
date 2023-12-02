@@ -1,4 +1,17 @@
-using Debugger
+# TODO : Confirm after fixing meshCube wire frame
+
+
+import Pkg
+Pkg.add([
+	"WGPUgfx", 
+	"WGPUCore", 
+	"WGPUCanvas", 
+	"GLFW", 
+	"Rotations", 
+	"StaticArrays", 
+	"WGPUNative", 
+])
+
 using WGPUgfx
 using WGPUCore
 using WGPUNative
@@ -8,7 +21,7 @@ using LinearAlgebra
 using Rotations
 using StaticArrays
 
-WGPUCore.SetLogLevel(WGPUCore.WGPULogLevel_Debug)
+WGPUCore.SetLogLevel(WGPUCore.WGPULogLevel_Off)
 
 scene = Scene()
 canvas = scene.canvas
