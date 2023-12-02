@@ -1,7 +1,17 @@
 # TODO this is a bit incomplete.
 # The wireframe does not convert the all vertices and lines yet but a good start for now
 
-using Debugger
+import Pkg
+Pkg.add([
+	"WGPUgfx", 
+	"WGPUCore", 
+	"WGPUCanvas", 
+	"GLFW", 
+	"Rotations", 
+	"StaticArrays", 
+	"WGPUNative",
+])
+
 using WGPUgfx
 using WGPUgfx: RenderType
 using WGPUCore
@@ -12,7 +22,7 @@ using LinearAlgebra
 using Rotations
 using StaticArrays
 
-WGPUCore.SetLogLevel(WGPUCore.WGPULogLevel_Debug)
+WGPUCore.SetLogLevel(WGPUCore.WGPULogLevel_Off)
 scene = Scene()
 canvas = scene.canvas
 gpuDevice = scene.gpuDevice
