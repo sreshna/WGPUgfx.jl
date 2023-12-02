@@ -1,4 +1,15 @@
 
+import Pkg
+Pkg.add([
+	"WGPUgfx", 
+	"WGPUCore", 
+	"WGPUCanvas", 
+	"GLFW", 
+	"Rotations", 
+	"StaticArrays", 
+	"WGPUNative",
+])
+
 using WGPUgfx
 using WGPUCore
 using GLFW
