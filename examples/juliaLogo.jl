@@ -1,4 +1,16 @@
-using Debugger
+
+import Pkg
+Pkg.add([
+	"WGPUgfx", 
+	"WGPUCore", 
+	"WGPUCanvas", 
+	"GLFW", 
+	"Rotations", 
+	"StaticArrays", 
+	"WGPUNative",
+	"CoordinateTransformations",
+])
+
 using WGPUgfx
 using WGPUCore
 using WGPUNative
