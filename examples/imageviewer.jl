@@ -1,4 +1,17 @@
-using Debugger
+# TODO : Image is being rendered the other side of the plain
+
+import Pkg
+Pkg.add([
+	"WGPUgfx", 
+	"WGPUCore", 
+	"WGPUCanvas", 
+	"GLFW", 
+	"Rotations", 
+	"StaticArrays", 
+	"WGPUNative", 
+	"CoordinateTransformations",
+])
+
 using WGPUgfx
 using WGPUCore
 using WGPUNative
@@ -9,7 +22,7 @@ using Rotations
 using StaticArrays
 using CoordinateTransformations
 
-WGPUCore.SetLogLevel(WGPUCore.WGPULogLevel_Debug)
+WGPUCore.SetLogLevel(WGPUCore.WGPULogLevel_Off)
 scene = Scene()
 canvas = scene.canvas
 gpuDevice = scene.gpuDevice
