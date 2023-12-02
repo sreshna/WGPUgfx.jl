@@ -4,7 +4,18 @@
 # Animating the mesh version should showcase how a bounding box and axis defined using RenderType
 # follows the mesh
 
-using Debugger
+import Pkg
+Pkg.add([
+	"WGPUgfx", 
+	"WGPUCore", 
+	"WGPUCanvas", 
+	"GLFW", 
+	"Rotations", 
+	"StaticArrays", 
+	"WGPUNative", 
+	"Images"
+])
+
 using WGPUgfx
 using WGPUCore
 using WGPUNative
@@ -14,7 +25,7 @@ using LinearAlgebra
 using Rotations
 using StaticArrays
 
-WGPUCore.SetLogLevel(WGPUCore.WGPULogLevel_Debug)
+WGPUCore.SetLogLevel(WGPUCore.WGPULogLevel_Off)
 
 scene = Scene()
 canvas = scene.canvas
